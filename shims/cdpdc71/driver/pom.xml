@@ -102,7 +102,6 @@
         <artifactId>jetty-runner</artifactId>
         <version>${jetty.version}</version>
         <scope>runtime</scope>
-        <type>pom</type>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
@@ -395,10 +394,6 @@
         <exclusion>
           <groupId>org.apache.htrace</groupId>
           <artifactId>htrace-core4</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.eclipse.jetty</groupId>
-          <artifactId>jetty-runner</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -790,8 +785,7 @@
                 *:*log4j*,*:xml-apis,*:xercesImpl,*:commons-logging,*:commons-math3,*:commons-pool2,*:commons-dbcp2,
                 *:janino,org.apache.velocity:velocity,
                 *:grpc-*,*:opencensus*,*:proto*,*:perfmark-api*,*:threetenbp*,
-                *:google-oauth-client-java6,
-                *:slf4j-api,*:slf4j-reload4j,*:slf4j-log4j12
+                *:google-oauth-client-java6
               </exclude>
               <transitive>true</transitive>
             </resolverFilter>
